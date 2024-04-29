@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/esstilo.css">
+    <title>Audio</title>
+</head>
+<body>
+
+    <H1>Reproduccion de Audio</H1>
+    <script>
+        var meses = new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+        var f=new Date();
+        document.write(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+    </script>
+    
+    <br> 
+    <br>  
+
+    <audio src="Assets/bells.mp3" preload="auto" controls></audio><br>
+    <audio id="player" src="Assets/bells.mp3" autoplay loop></audio><br>
+    <button onclick="document.getElementById('player');">Stop</button>
+
+    <br>
+    <br>
+
+    <audio src="Assets/bells.mp3" preload="auto" controls></audio><br>
+    <audio id="player" src="Assets/bells.mp3" autoplay loop></audio><br>
+    <button onclick="document.getElementById('player');">Stop</button>
+
+    <br>
+    <br>
+
+    <audio src="Assets/bells.mp3" preload="auto" controls></audio><br>
+    <audio id="player" src="Assets/bells.mp3" autoplay loop></audio><br>
+    <button onclick="document.getElementById('player');">Stop</button>
+    
+</body>
+</html>
